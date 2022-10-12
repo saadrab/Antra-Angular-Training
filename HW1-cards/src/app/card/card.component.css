@@ -1,3 +1,19 @@
+:host {
+  width: 40%;
+  flex: 1;
+  flex-wrap: wrap;
+  min-width: 400px;
+  padding-bottom: 30px;
+}
 #card {
+  border: 2px solid black;
+  border-radius: 10px;
+
   width: 100%;
+  padding: 20px;
+  /* height: 300px; */
+}
+
+button {
+  color: white;
 }

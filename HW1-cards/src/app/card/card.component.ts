@@ -8,15 +8,15 @@ import { Card } from '../interfaces/card.interface';
 })
 export class CardComponent implements OnInit {
   @Input() card!: Card;
-  @Output() emitColor = new EventEmitter();
+  @Output() emitId = new EventEmitter();
 
-  buttonStyle: string = 'background-color: ' + this.card.color;
+  styles = {};
 
   constructor() {}
 
   ngOnInit(): void {}
 
   changeColor() {
-    this.emitColor.emit(this.card.color);
+    this.emitId.emit(this.card.id);
   }
 }

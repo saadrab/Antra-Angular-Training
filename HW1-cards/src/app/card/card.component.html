@@ -1,7 +1,11 @@
-<div id="card">
+<div id="card{{ card.id }}" [ngStyle]="styles">
   <h1>{{ card.title }}</h1>
-  <p>{{ card.description }}</p>
-  <button (click)="changeColor()" [style]="buttonStyle">test</button>
+  <h3>{{ card.description }}</h3>
+  <button
+    id="btn{{ card.id }}"
+    [style.background]="card.color"
+    (click)="changeColor()"
+  >
+    test
+  </button>
 </div>
-
-<h1>TEST</h1>

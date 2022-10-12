@@ -1,10 +1,9 @@
-<h1 id="header" [style]="titleStyle">{{ header }}</h1>
+<h1 id="header" [style.color]="headerColor">{{ header }}</h1>
 
-<div>
-  <!-- <div *ngFor="let card of cards">Testingsn</div> -->
+<div id="cards-holder">
   <app-card
     *ngFor="let card of cards"
     [card]="card"
-    (emitColor)="changeColor($event)"
+    (emitId)="changeColor($event)"
   ></app-card>
 </div>
