@@ -1,11 +1,13 @@
 <div id="card{{ card.id }}" [ngStyle]="styles">
-  <h1>{{ card.title }}</h1>
-  <h3>{{ card.description }}</h3>
-  <button
-    id="btn{{ card.id }}"
-    [style.background]="card.color"
-    (click)="changeColor()"
-  >
-    test
-  </button>
+  <div id="card-content">
+    <h1>{{ card.title }}</h1>
+    <h3>{{ card.description }}</h3>
+    <button
+      id="btn{{ card.id }}"
+      [style.background]="card.color"
+      (click)="changeColor()"
+    >
+      Set {{ card.color }}
+    </button>
+  </div>
 </div>
