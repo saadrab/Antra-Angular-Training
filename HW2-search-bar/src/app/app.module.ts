@@ -6,6 +6,7 @@ import { UserDetailsComponent } from './user-details/user-details.component';
 import { FilterPipe } from './pipes/filter.pipe';
 import { SortFirstNamePipe } from './pipes/sort-first-name.pipe';
 import { FormsModule } from '@angular/forms';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,7 @@ import { FormsModule } from '@angular/forms';
     FilterPipe,
     SortFirstNamePipe,
   ],
-  imports: [BrowserModule, FormsModule],
+  imports: [BrowserModule, FormsModule, NgbModule],
   providers: [],
   bootstrap: [AppComponent],
 })
