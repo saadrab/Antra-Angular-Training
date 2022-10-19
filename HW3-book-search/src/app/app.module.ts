@@ -3,10 +3,16 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { SearchbarComponent } from './searchbar/searchbar.component';
+import { BooklistComponent } from './booklist/booklist.component';
+import { WishlistComponent } from './wishlist/wishlist.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    SearchbarComponent,
+    BooklistComponent,
+    WishlistComponent
   ],
   imports: [
     BrowserModule,
