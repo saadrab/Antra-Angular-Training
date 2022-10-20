@@ -2,4 +2,10 @@ div {
   position: sticky;
   top: 0;
   align-self: flex-start;
+  max-width: 300px;
+}
+
+#delete-btn {
+  position: absolute;
+  right: 5px;
 }

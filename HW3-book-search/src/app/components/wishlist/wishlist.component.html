@@ -1,9 +1,16 @@
 <div>
   Wishlist:
-  <ol>
-    <li *ngFor="let book of bookService.wishlist$ | async">
+  <ol id="wishlist">
+    <mat-card *ngFor="let book of bookService.wishlist$ | async">
       {{ book }}
-      <button (click)="bookService.deleteFromWishList(book)">Delete</button>
-    </li>
+      <button
+        mat-raised-button
+        id="delete-btn"
+        color="accent"
+        (click)="bookService.deleteFromWishList(book)"
+      >
+        Delete
+      </button>
+    </mat-card>
   </ol>
 </div>

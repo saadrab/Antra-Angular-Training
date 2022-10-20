@@ -3,7 +3,9 @@
     <mat-card *ngFor="let book of bookService.books$ | async" class="card">
       <img [src]="book.bookpic" />
       <mat-card-content id="card-content">
-        <p id="title">Title: {{ book.bookname }}</p>
+        <p>
+          Title: <span id="title">{{ book.bookname }}</span>
+        </p>
         <p>Publisher: {{ book.publisher }}</p>
         <p>Publish Date: {{ book.publishdate }}</p>
         <div id="desc">
