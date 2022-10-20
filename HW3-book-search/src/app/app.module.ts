@@ -6,6 +6,8 @@ import { SearchbarComponent } from './components/searchbar/searchbar.component';
 import { BooklistComponent } from './components/booklist/booklist.component';
 import { WishlistComponent } from './components/wishlist/wishlist.component';
 import { HttpClientModule } from '@angular/common/http';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatCardModule } from '@angular/material/card';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,12 @@ import { HttpClientModule } from '@angular/common/http';
     BooklistComponent,
     WishlistComponent,
   ],
-  imports: [BrowserModule, HttpClientModule],
+  imports: [
+    BrowserModule,
+    HttpClientModule,
+    BrowserAnimationsModule,
+    MatCardModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })
