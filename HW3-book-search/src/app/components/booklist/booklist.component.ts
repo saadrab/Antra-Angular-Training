@@ -12,4 +12,8 @@ export class BooklistComponent implements OnInit {
   ngOnInit(): void {
     this.bookService.books$.subscribe();
   }
+
+  addToWishList(bookName: string) {
+    this.bookService.addToWishList(bookName);
+  }
 }

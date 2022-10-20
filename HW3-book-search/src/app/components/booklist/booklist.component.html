@@ -1,8 +1,10 @@
 <div>
-  <ul>
+  <ol>
     <li *ngFor="let book of bookService.books$ | async" class="">
       <img [src]="book.bookpic" alt="" />
       {{ book.bookname }}
+
+      <button (click)="addToWishList(book.bookname)">Add to Wishlist</button>
     </li>
-  </ul>
+  </ol>
 </div>

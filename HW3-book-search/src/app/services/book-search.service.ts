@@ -46,4 +46,14 @@ export class BookSearchService {
       })
     );
   }
+
+  addToWishList(bookName: string) {
+    if (!this.wishlist.includes(bookName)) this.wishlist.push(bookName);
+    this.wishesBS$.next(this.wishlist);
+  }
+
+  deleteFromWishList(bookName: string) {
+    this.wishlist = this.wishlist.filter((book) => book !== bookName);
+    this.wishesBS$.next(this.wishlist);
+  }
 }

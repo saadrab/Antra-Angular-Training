@@ -1,1 +1,9 @@
-<p>wishlist!</p>
+<div>
+  Wishlist:
+  <ol>
+    <li *ngFor="let book of bookService.wishlist$ | async">
+      {{ book }}
+      <button (click)="bookService.deleteFromWishList(book)">Delete</button>
+    </li>
+  </ol>
+</div>
