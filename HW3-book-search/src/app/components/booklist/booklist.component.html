@@ -1,0 +1,8 @@
+<div>
+  <ul>
+    <li *ngFor="let book of bookService.books$ | async" class="">
+      <img [src]="book.bookpic" alt="" />
+      {{ book.bookname }}
+    </li>
+  </ul>
+</div>
