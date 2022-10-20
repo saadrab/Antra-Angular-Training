@@ -1,8 +1,8 @@
 <div>
   Wishlist:
   <ol id="wishlist">
-    <mat-card *ngFor="let book of bookService.wishlist$ | async">
-      {{ book }}
+    <mat-card id="wish" *ngFor="let book of bookService.wishlist$ | async">
+      <span id="book-name">{{ book }}</span>
       <button
         mat-raised-button
         id="delete-btn"

@@ -2,10 +2,14 @@ div {
   position: sticky;
   top: 0;
   align-self: flex-start;
-  max-width: 300px;
+  max-width: 500px;
 }
 
-#delete-btn {
-  position: absolute;
-  right: 5px;
+#wish {
+  display: flex;
+  justify-content: space-between;
+}
+
+#book-name {
+  position: relative;
 }
